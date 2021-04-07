@@ -40,7 +40,7 @@ bool primeDigits(int number)
     while (number > 0)
     {
         int digit = number % 10;
-        if (digit != 2 && digit != 3 && digit != 5 && digit == 7) return false;
+        if (digit != 2 && digit != 3 && digit != 5 && digit != 7) return false;
         number /= 10;
     }
     return true;
